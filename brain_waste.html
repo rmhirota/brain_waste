@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Data Reporter candidate assignment – Lighthouse Reports</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="brain_waste_files/libs/clipboard/clipboard.min.js"></script>
+<script src="brain_waste_files/libs/quarto-html/quarto.js"></script>
+<script src="brain_waste_files/libs/quarto-html/popper.min.js"></script>
+<script src="brain_waste_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="brain_waste_files/libs/quarto-html/anchor.min.js"></script>
+<link href="brain_waste_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="brain_waste_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="brain_waste_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="brain_waste_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="brain_waste_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Data Reporter candidate assignment – Lighthouse Reports</h1>
+<p class="subtitle lead">Renata Hirota</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="editorial-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="editorial-objectives">Editorial objectives</h2>
+<ol type="1">
+<li>Explain the extent of brain waste in Europe and identify where the problem is worst</li>
+<li>Identify the professions most impacted by brain waste</li>
+<li>Identify other variables that are related by brain waste, such as gender, age and reasons for migration.</li>
+</ol>
+</section>
+<section id="follow-up-questions" class="level2">
+<h2 class="anchored" data-anchor-id="follow-up-questions">Follow up questions</h2>
+<ol type="1">
+<li>How is the data going to be presented to readers?</li>
+<li>About the data: what is the microdata’s format? (e.g.&nbsp;one single dataset, relational database etc) Ideally, we should be able to use information from the same individual across tables, which can’t be done with the summarised tables available.</li>
+<li>Does the microdata provide more detailed information on the migrants’ country of origin (as opposed to the general area available in the summarised tables)?</li>
+</ol>
+</section>
+<section id="research-question" class="level2">
+<h2 class="anchored" data-anchor-id="research-question">Research question</h2>
+<ul>
+<li>Can we use job satisfaction, changes in skill level and overqualification as proxies for brain waste? Is there any kind of age or gender bias?</li>
+</ul>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="data-memo" class="level2">
+<h2 class="anchored" data-anchor-id="data-memo">Data Memo</h2>
+<section id="discrimination-in-the-workplace-and-unemployment" class="level3">
+<h3 class="anchored" data-anchor-id="discrimination-in-the-workplace-and-unemployment">1. Discrimination in the workplace and unemployment</h3>
+<p>More people feel discriminated by their foreign origin than because of age or disability. Among men, it is the most common reason (second to “Other”) for discrimination. <em>For women, gender is a most common reason.</em> <strong>Austria</strong> and the <strong>Netherlands</strong> are countries where foreign origin is a common reason for discrimination.</p>
+<p>For those who have sought work, the <strong>lack of language skills</strong> is pointed out as the most common barrier in getting a suitable job, which makes sense if we look at the level of skills in the main host country language before migrating (<a href="#tbl-language">Table&nbsp;1</a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-language" class="anchored">
+<table class="table table-sm table-striped">
+<caption>Table&nbsp;1: Level in the main host country language before migrating</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">level</th>
+<th style="text-align: left;">%</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">None or minimum</td>
+<td style="text-align: left;">45.8%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Basic</td>
+<td style="text-align: left;">15.7%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Intermediate</td>
+<td style="text-align: left;">9.1%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Proficient</td>
+<td style="text-align: left;">10.6%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mother tongue</td>
+<td style="text-align: left;">18.8%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="employment-satisfaction-and-changes-in-skill-level" class="level3">
+<h3 class="anchored" data-anchor-id="employment-satisfaction-and-changes-in-skill-level">2. Employment satisfaction and changes in skill level</h3>
+<p>Brain waste can also be identified through <strong>underemployment</strong> of foreign professionals. Even in countries where employment rates are high, there is dissatisfaction and changes in skill level from jobs before and after migrating.</p>
+<p>Certain occupations such as plant and machine operators and assemblers have lower levels of satisfaction (<a href="#tbl-satisfaction">Table&nbsp;2</a>), and it is especially low in Portugal and Poland (<a href="#tbl-satisfaction-country">Table&nbsp;3</a>). <em>It would be interesting if we could interview people in these countries and try to understand why these occupations have lower satisfaction rates.</em></p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-satisfaction" class="anchored">
+<table class="table table-sm table-striped">
+<caption>Table&nbsp;2: Job satisfaction across occupations</caption>
+<colgroup>
+<col style="width: 69%">
+<col style="width: 8%">
+<col style="width: 6%">
+<col style="width: 8%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">occupation</th>
+<th style="text-align: left;">HIGH</th>
+<th style="text-align: left;">MED</th>
+<th style="text-align: left;">LOW</th>
+<th style="text-align: left;">NONE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Armed forces occupations</td>
+<td style="text-align: left;">65.1%</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">34.9%</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Managers</td>
+<td style="text-align: left;">55.1%</td>
+<td style="text-align: left;">4.0%</td>
+<td style="text-align: left;">36.8%</td>
+<td style="text-align: left;">1.5%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Professionals</td>
+<td style="text-align: left;">50.4%</td>
+<td style="text-align: left;">4.7%</td>
+<td style="text-align: left;">40.3%</td>
+<td style="text-align: left;">1.3%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Technicians and associate professionals</td>
+<td style="text-align: left;">45.9%</td>
+<td style="text-align: left;">5.3%</td>
+<td style="text-align: left;">42.6%</td>
+<td style="text-align: left;">1.8%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Clerical support workers</td>
+<td style="text-align: left;">43.5%</td>
+<td style="text-align: left;">5.7%</td>
+<td style="text-align: left;">44.0%</td>
+<td style="text-align: left;">1.9%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Service and sales workers</td>
+<td style="text-align: left;">41.5%</td>
+<td style="text-align: left;">6.9%</td>
+<td style="text-align: left;">44.8%</td>
+<td style="text-align: left;">2.1%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Skilled agricultural, forestry and fishery workers</td>
+<td style="text-align: left;">38.3%</td>
+<td style="text-align: left;">8.4%</td>
+<td style="text-align: left;">47.7%</td>
+<td style="text-align: left;">2.3%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Craft and related trades workers</td>
+<td style="text-align: left;">40.6%</td>
+<td style="text-align: left;">5.1%</td>
+<td style="text-align: left;">47.2%</td>
+<td style="text-align: left;">1.6%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Plant and machine operators and assemblers</td>
+<td style="text-align: left;">35.3%</td>
+<td style="text-align: left;">6.5%</td>
+<td style="text-align: left;">51.5%</td>
+<td style="text-align: left;">2.2%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Elementary occupations</td>
+<td style="text-align: left;">33.9%</td>
+<td style="text-align: left;">8.8%</td>
+<td style="text-align: left;">48.1%</td>
+<td style="text-align: left;">2.6%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-satisfaction-country" class="anchored">
+<table class="table table-sm table-striped">
+<caption>Table&nbsp;3: Occupations with lowest level of satisfaction per country</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">country</th>
+<th style="text-align: left;">HIGH</th>
+<th style="text-align: left;">MED</th>
+<th style="text-align: left;">LOW</th>
+<th style="text-align: left;">NONE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Portugal</td>
+<td style="text-align: left;">21.6%</td>
+<td style="text-align: left;">10.6%</td>
+<td style="text-align: left;">64.1%</td>
+<td style="text-align: left;">2.5%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Poland</td>
+<td style="text-align: left;">31.0%</td>
+<td style="text-align: left;">6.0%</td>
+<td style="text-align: left;">60.5%</td>
+<td style="text-align: left;">1.5%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Czechia</td>
+<td style="text-align: left;">37.2%</td>
+<td style="text-align: left;">4.6%</td>
+<td style="text-align: left;">57.3%</td>
+<td style="text-align: left;">0.5%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="tbl-change" class="cell tbl-parent quarto-layout-panel anchored" data-tbl-cap="Change in skill level from jobs before and after migrating.">
+
+</div>
+<p>One reason for dissatisfaction might be the incompatibility of skill level, since 2.3M. people have had a descrease in skill level in their jobs. <em>This would need to be checked with the microdata (comparing answers for individuals) and reporting on the ground.</em> It is also important to note that the higher the education, the more people tend to self-declare as over-qualified, especially among women and young people. (caution: data from 2014).</p>
+</section>
+<section id="gender-and-age-bias" class="level3">
+<h3 class="anchored" data-anchor-id="gender-and-age-bias">3. Gender and age bias</h3>
+<p>Most analyses have found differences in answers according to gender and age. When conducting the reporting on the ground, we should make sure that we are interviewing men and women from different ages.</p>
+</section>
+<section id="further-comments" class="level3">
+<h3 class="anchored" data-anchor-id="further-comments">Further comments</h3>
+<ul>
+<li>The microdata is important in order to be able to investigate the data in an individual level and avoid ecological fallacies (assuming that what is true for a population is true for the individual members of that population);</li>
+<li>The question of using variables that are present in the data (job satisfaction, over-qualification, etc) as proxies for brain waste should be validated with migration researchers and reporting on the ground;</li>
+<li>Suggestion: apart from text, it would be interesting to display an interactive tool where readers can input data (age, sex, education, etc) to compare their own situation to foreign-born people with the same characteristics in terms of employment and job satisfaction, for example.</li>
+</ul>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
